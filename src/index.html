@@ -7,11 +7,60 @@
     <title>CoinMarket</title>
     <script type="module" defer src="/main.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <div id="app" class="font-bold text-4xl text-center">
-      hello world
-    </div>
-    
+  <body class="bg-black font-public-sans">
+    <header class="bg-[#F2F2F2] py-10 px-6 flex flex-col
+    ">
+      <nav class="flex justify-between items-center mb-8">
+        <div class="flex items-center gap-2
+        ">
+          <img src="./assets/logo.svg" alt="logo">
+          <p class="text-3xl font-bold text-[#36536B]">Co<span class="font-extralight">in</span></p>
+        </div>
+        
+        <input type="checkbox" id="check" class="peer/menu hidden">
+        <label for="check" class="flex cursor-pointer w-6 h-6 bg-cover bg-no-repeat bg-menu-burgeur peer-checked/menu:bg-menu-close transition-all duration-700 z-20 md:hidden"></label>
+        
+        <ul class="absolute left-0 bg-[#36536B] top-0 w-full h-screen grid items-center justify-center content-center gap-10
+          clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-700
+          md:block md:w-[10%] md:h-auto md:text-white 
+          md:clip-circle-full md:relative md:bg-transparent md:gap-2 ">
+          <li class="text-2xl text-[#FBFCFE] py-4 px-20  bg-[#BA4270] rounded-[44px] flex justify-center items-center">
+            <select class=" text-[#FBFCFE] bg-[#BA4270] cursor-pointer ">
+                <option value="1" selected>USD</option>
+                <option value="2">EUR</option>
+                <option value="3">GBP</option>
+              </select>
+          </li>
+          
+      </ul>
+      </nav>
+      <section class="flex flex-col justify-center items-center">
+        <figure class="w-full mb-6 flex justify-between items-center text-center">
+          <img class="aspect-square rounded-[50%]" src="./assets/mobile.svg">
+        </figure>
+        
+        <h1 class="text-[#36536B] font-bold text-2xl text-center mb-6">Monitoreo de Criptomonedas en Tiempo Real</h1>
+        <p class="text-black/50 mb-4 text-center">Bienvenido a nuestra plataforma de CoinMarketWatch, 
+          donde puedes seguir los precios y tendencias de las criptomonedas 
+          en tiempo real.
+        </p>
+        
+        <p class="text-black/50 text-center">Obtén información detallada sobre el mercado, 
+            gráficos interactivos y las últimas noticias. Mantente al día con las 
+            actualizaciones y análisis más recientes.
+        </p>
+      </section>
+    </header>
+    <main>
+      <section></section>
+    </main>
+    <footer>
+
+    </footer>
   </body>
 </html>
