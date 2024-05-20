@@ -31,7 +31,7 @@ const introduceParameters = async ()=>{
   
   //recorremos el array
   let num = 1
-  console.log(coins)
+  
   coins.forEach(element => {
     if(
       element.CoinInfo &&
