@@ -11,3 +11,46 @@
     clip-path: circle(150% at top right);
   }
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lplgvh');
+  src:  url('../fonts/icomoon.eot?lplgvh#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lplgvh') format('truetype'),
+    url('../fonts/icomoon.woff?lplgvh') format('woff'),
+    url('../fonts/icomoon.svg?lplgvh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sun:before {
+  content: "\e900";
+}
+.icon-moon:before {
+  content: "\e902";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-discord:before {
+  content: "\e901";
+}
