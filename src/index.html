@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./assets/logowhite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CoinMarket</title>
+    <title>CoinMarketWatch</title>
     
     <link rel="stylesheet" href="./css/style.css">
 
@@ -16,12 +16,12 @@
   </head>
   <body class="bg-black font-public-sans">
     <header class="bg-[#F2F2F2] py-10 px-6 flex flex-col md:px-10 lg:px-40 justify-between items-center
-    ">
+    " id="index">
     <section class=" w-full max-w-screen-xl">
       <nav class="flex justify-between items-center mb-8 ">
         <div class="flex items-center gap-2
         ">
-          <img src="./assets/logo.svg" alt="logo">
+          <img src="./assets/logo.svg" loading="lazy" alt="logo">
           <p class="text-3xl font-bold text-[#36536B] md:text-4xl">Co<span class="font-extralight">in</span></p>
         </div>
         
@@ -30,8 +30,8 @@
         
         <ul class="absolute left-0 bg-[#36536B] top-0 w-full h-screen grid items-center justify-center content-center gap-10
           clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-700
-          md:block md:h-auto md:text-white 
-          md:clip-circle-full md:relative md:bg-transparent md:gap-2 md:w-[20%] lg:w-[10%]">
+          md:flex md:h-auto md:text-white 
+          md:clip-circle-full md:relative md:bg-transparent md:gap-2 md:w-[40%] lg:w-[30%]">
           <li class="text-2xl text-[#FBFCFE] py-2 px-6  bg-[#BA4270] rounded-[44px] flex justify-center items-center">
             <select class=" text-[#FBFCFE] bg-[#BA4270] cursor-pointer" id="divisas">
                 <option value="1" selected>USD</option>
@@ -39,15 +39,24 @@
                 <option value="3">GBP</option>
               </select>
           </li>
+          <li class="text-2xl text-[#FBFCFE] py-2 px-6  bg-[#BA4270] rounded-[44px] flex justify-center items-center">
+            <select class=" text-[#FBFCFE] bg-[#BA4270] cursor-pointer" id="cantidad">
+                <option value="10">Top 10</option>
+                <option value="15">Top 15</option>
+                <option value="25" selected>Top 25</option>
+                <option value="52">Top 50</option>
+                <option value="96">Top 90</option>
+              </select>
+          </li>
           
         </ul>
       </nav>
-      <section class="flex flex-col justify-center items-center md:grid grid-cols-2 py-10 md:py-20">
-        <figure class="w-full mb-6 flex justify-between items-center text-center">
-          <img class="aspect-square rounded-[50%]" src="./assets/mobile.svg">
+      <section class="flex flex-col justify-center items-center md:grid md:grid-cols-2 py-10 md:py-20 md:gap-8 lg:gap-12">
+        <figure class="w-full max-w-80 mb-6 flex text-center md:place-self-center md:self-center ">
+          <img class="w-full rounded-[50%]" src="./assets/mobile.png">
         </figure>
         <div class="lg:w-[80%]">
-          <h1 class="text-[#36536B] font-bold text-2xl text-center mb-6 md:text-3xl md:text-left">Monitoreo de Criptomonedas en Tiempo Real</h1>
+          <h1 class="text-[#36536B] font-bold text-2xl text-center mb-6 md:text-3xl md:text-left lg:text-5xl">Monitoreo de Criptomonedas en Tiempo Real</h1>
           <p class="text-black/50 mb-4 text-center md:text-left">Bienvenido a nuestra plataforma de CoinMarketWatch, 
             donde puedes seguir los precios y tendencias de las criptomonedas 
             en tiempo real.
@@ -66,7 +75,11 @@
     <main class="bg-black px-6 py-7 text-white md:px-10 lg:px-40 flex flex-col justify-center items-center">
       <section class="w-full max-w-screen-xl py-10 md:py-20">
         <h2 class=" text-center font-bold text-2xl text-white md:text-3xl mb-12 md:mb-24">Capitalización de Mercado</h2>
-        <section id="container-coins" class="grid w-full gap-4 md:gap-0">
+        <div class="flex mb-6 justify-between md:px-16 md:py-6 md:text-xl">
+          <div><p>Nombre/Cap. Merc.</p></div>
+          <div><p>Precio/24h %</p></div>
+        </div>
+        <section id="container-coins" class="grid w-full gap-6 md:gap-0">
         </section>
 
       </section>
@@ -74,16 +87,15 @@
     <footer class="w-full text-[#1B262F] py-10 px-6 flex flex-col justify-center items-center md:px-10 lg:px-40 md:py-20">
       <section class=" w-full max-w-screen-xl">
         <nav class="w-full flex flex-col justify-center items-center gap-8">
-          <div class="flex items-center gap-2
-          ">
+          <a href="#index" class="flex items-center gap-2 cursor-pointer">
             <img src="./assets/logowhite.svg" alt="logo">
-            <p class="text-3xl font-bold text-white">Co<span class="font-extralight">in</span></p>
-          </div>
+            <p class="text-3xl font-bold text-white hover:text-[#BA4270]">Co<span class="font-extralight">in</span></p>
+          </a>
           <hr class="text-white w-full">
           <section class="flex justify-center items-center gap-6">
-            <a href="https://github.com/naviotech" class="icon-github text-3xl text-white cursor-pointer hover:text-[#BA4270] hover:scale-125 transition-all" ></a>
-            <a href="https://www.linkedin.com/in/naviomaya" class="icon-linkedin text-3xl text-white cursor-pointer hover:text-[#BA4270] hover:scale-125 transition-all"></a>
-            <a href="https://discord.com/users/edu_navio" class="icon-discord text-3xl text-white cursor-pointer hover:text-[#BA4270] hover:scale-125 transition-all"></a>
+            <a href="https://github.com/naviotech" target="_blank" class="icon-github text-3xl text-white cursor-pointer hover:text-[#BA4270] hover:scale-125 transition-all" ></a>
+            <a href="https://www.linkedin.com/in/naviomaya" target="_blank" class="icon-linkedin text-3xl text-white cursor-pointer hover:text-[#BA4270] hover:scale-125 transition-all"></a>
+            <a href="https://discord.com/users/edu_navio" target="_blank" class="icon-discord text-3xl text-white cursor-pointer hover:text-[#BA4270] hover:scale-125 transition-all"></a>
           </section>
           <p> &copy Eduardo Navío Maya</p>
         </nav>
