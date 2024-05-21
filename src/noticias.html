@@ -12,18 +12,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <script type="module" defer src="main.js"></script>
+    <script type="module" defer src="noticias.js"></script>
   </head>
   <body class="bg-black font-public-sans">
     <header class="bg-[#F2F2F2] py-10 px-6 flex flex-col md:px-10 lg:px-40 justify-between items-center
     " id="index">
     <section class=" w-full max-w-screen-xl">
-      <nav class="flex justify-between items-center mb-8 lg:justify-between">
-        <div class="flex items-center gap-2
+      <nav class="flex justify-between items-center mb-8 ">
+        <a href="index.html" class="flex items-center gap-2
         ">
           <img src="./assets/logo.svg" loading="lazy" alt="logo">
           <p class="text-3xl font-bold text-[#36536B] md:text-4xl">Co<span class="font-extralight">in</span></p>
-        </div>
+      </a>
         
         <input type="checkbox" id="check" class="peer/menu hidden">
         <label for="check" class="flex cursor-pointer w-6 h-6 bg-cover bg-no-repeat bg-menu-burgeur peer-checked/menu:bg-menu-close transition-all duration-700 z-20 md:hidden"></label>
@@ -31,43 +31,25 @@
         <ul class="absolute left-0 bg-[#36536B] top-0 w-full h-screen grid items-center justify-center content-center gap-10
           clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-700
           md:flex md:h-auto md:text-white 
-          md:clip-circle-full md:relative md:bg-transparent md:w-[40%] lg:w-[50%] md:self-end md:right-0 md:gap-5">
+          md:clip-circle-full md:relative md:bg-transparent md:w-[40%] lg:w-[30%] md:self-end md:right-0 md:gap-5">
           <li class="text-2xl text-[#FBFCFE] py-2 px-6  bg-[#BA4270] rounded-[44px] flex justify-center items-center md:px-0 md:py-0 md:bg-transparent">
-            <a href="noticias.html" class="md:text-black md:hover:text-[#BA4270] md:hover:scale-110">Noticias</a>
-          </li>
-          <li class="text-2xl text-[#FBFCFE] py-2 px-6  bg-[#BA4270] rounded-[44px] flex justify-center items-center md:px-0 md:py-0 md:bg-transparent">
-            <select class=" text-[#FBFCFE] bg-[#BA4270] cursor-pointer md:text-black md:bg-transparent md:hover:text-[#BA4270] md:hover:scale-110" id="divisas">
-                <option value="1" selected>USD</option>
-                <option value="2">EUR</option>
-                <option value="3">GBP</option>
-              </select>
-          </li>
-          <li class="text-2xl text-[#FBFCFE] py-2 px-6  bg-[#BA4270] rounded-[44px] flex justify-center items-center md:px-0 md:py-0 md:bg-transparent">
-            <select class=" text-[#FBFCFE] bg-[#BA4270] cursor-pointer md:text-black md:bg-transparent md:hover:text-[#BA4270] md:hover:scale-110" id="cantidad">
-                <option value="25" selected>TOP 25</option>  
-                <option value="10">TOP 10</option>
-                <option value="15">TOP 15</option>
-                <option value="52">TOP 50</option>
-                <option value="96">TOP 90</option>
-              </select>
-          </li>
-          
+            <a href="index.html" class="text-black md:hover:text-[#BA4270] md:hover:scale-110">Inicio</a>
+          </li> 
         </ul>
       </nav>
       <section class="flex flex-col justify-center items-center md:grid md:grid-cols-2 py-10 md:py-20 md:gap-8 lg:gap-12">
         <figure class="w-full max-w-80 mb-6 flex text-center md:place-self-center md:self-center ">
-          <img class="w-full rounded-[50%]" src="./assets/mobile.png">
+          <img class="w-full rounded-[50%]" src="./assets/news.png">
         </figure>
         <div class="lg:w-[100%]">
-          <h1 class="text-[#36536B] font-bold text-2xl text-center mb-6 md:text-3xl md:text-left lg:text-5xl">Monitoreo de Criptomonedas en Tiempo Real</h1>
-          <p class="text-black/50 mb-4 text-center md:text-left">Bienvenido a nuestra plataforma de CoinMarketWatch, 
-            donde puedes seguir los precios y tendencias de las criptomonedas 
-            en tiempo real.
+          <h1 class="text-[#36536B] font-bold text-2xl text-center mb-6 md:text-3xl md:text-left lg:text-5xl">Crypto Noticias de última hora</h1>
+          <p class="text-black/50 mb-4 text-center md:text-left">
+            Mantente informado con las últimas actualizaciones sobre Bitcoin, Ethereum, altcoins y 
+            la tecnología blockchain. Desde tendencias de mercado hasta innovaciones tecnológicas.
+            
           </p>
           
-          <p class="text-black/50 text-center md:text-left">Obtén información detallada sobre el mercado, 
-              gráficos interactivos y las últimas noticias. Mantente al día con las 
-              actualizaciones y análisis más recientes.
+          <p class="text-black/50 text-center md:text-left">
           </p>
         </div>
         
@@ -76,13 +58,10 @@
       
     </header>
     <main class="bg-black px-6 py-7 text-white md:px-10 lg:px-40 flex flex-col justify-center items-center">
-      <section class="w-full max-w-screen-xl py-10 md:py-20">
-        <h2 class=" text-center font-bold text-2xl text-white md:text-3xl mb-12 md:mb-24">Capitalización de Mercado</h2>
-        <div class="flex mb-6 justify-between md:px-16 md:py-6 md:text-xl">
-          <div><p>Nombre/Cap. Merc.</p></div>
-          <div><p>Precio/24h %</p></div>
-        </div>
-        <section id="container-coins" class="grid w-full gap-6 md:gap-0">
+      <section class="w-full max-w-screen-xl py-10 md:py-20 flex flex-col justify-center items-center">
+        <h2 class=" text-center font-bold text-2xl text-white md:text-3xl mb-12 md:mb-24 lg:text-5xl">Noticiario</h2>
+        
+        <section id="container-news" class="grid w-full gap-12 md:gap-10 max-w-screen-lg">
         </section>
 
       </section>
