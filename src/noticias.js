@@ -3,7 +3,7 @@ const news= document.querySelector("#container-news")
 
 async function introduceNews(){
   const notices = await apiNews();
-  console.log(notices)
+  
   limpiarHtml();
   notices.forEach((noticia)=>{
     let article = document.createElement("article")
@@ -11,7 +11,7 @@ async function introduceNews(){
     const img = "./assets/img-news.png"
     const body = noticia.body
     const publicado = convertTimestampToDate(noticia.published_on)
-    console.log(publicado)
+    
     article.classList.add("w-full", "grid","md:grid-cols-2", "justify-between","items-center","md:border","md:border-[#36536B]", "md:px-16", "md:py-6","md:bg-gray-500/10", "md:rounded-2xl")
     article.innerHTML = `
       <header class="w-full md:w-[90%] rounded-xl">
