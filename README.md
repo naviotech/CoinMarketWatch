@@ -28,10 +28,10 @@ Coin Market ha sido desarrollado utilizando una variedad de tecnologías web mod
 
 ## Contribuciones
 
-⭐ Da una estrella al proyecto para mostrar tu apoyo
-🚀 Bifurca el repositorio y agrega tus propias funcionalidades
-🐛 Reporta errores y ayuda a mejorar el código
-📝 Contribuye a la documentación y guías
+- ⭐ Da una estrella al proyecto para mostrar tu apoyo
+- 🚀 Bifurca el repositorio y agrega tus propias funcionalidades
+- 🐛 Reporta errores y ayuda a mejorar el código
+- 📝 Contribuye a la documentación y guías
 
 ¡Espero con interés tus contribuciones y aprecio tu ayuda para hacer mejorar esta app!
 
