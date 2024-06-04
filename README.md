@@ -2,7 +2,7 @@
 <img src="https://github.com/naviotech/CoinMarketWatch/blob/main/banner.jpg">
 ¡Bienvenido/a a CoinMarketWatch! Tu fuente definitiva para seguir los precios de criptomonedas en tiempo real y las últimas noticias del mundo de las criptomonedas.
 
-## Captura de Pantalla
+## Pre Visualización del proyecto
 <p display="flex" align="center">
   <img src="https://github.com/naviotech/CoinMarketWatch/blob/main/cap1.png" width="400px" height="600px">
   <img src="https://github.com/naviotech/CoinMarketWatch/blob/main/cap2.png" width="400px" height="600px">
