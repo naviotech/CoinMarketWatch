@@ -41,4 +41,4 @@ Coin Market ha sido desarrollado utilizando una variedad de tecnologías web mod
 
 - **Nombre:** Eduardo Navio Maya
 - **Contacto:** [![GMAIL](https://img.shields.io/badge/naviomaya%40gmail.com%20-%20%20DISCORD?style=social&logo=GMAIL&labelColor=black&color=white)](mailto:naviomaya@gmail.com)
-- **Link al Proyecto:** [Proyecto](https://coin-market-watch.netlify.app/)
+- **Link al Proyecto:** <a href="https://coin-market-watch.netlify.app/)" target="_blank">Proyecto</a>
